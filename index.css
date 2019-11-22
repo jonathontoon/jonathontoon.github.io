@@ -1,0 +1,145 @@
+@font-face {
+  font-family: "J";
+  src: url("fonts/j-bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "J";
+  src: url("fonts/j-semibold.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "J";
+  src: url("fonts/j-medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "J";
+  src: url("fonts/j-regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+html {
+  font-family: "J", Helvetica, Arial, sans-serif !important;
+  height: 100%;
+}
+html body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: black;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+@media (prefers-color-scheme: light) {
+  html body {
+    background-color: white;
+  }
+}
+html body main {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+html body main #sketch {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  width: 100%;
+  height: 70%;
+  overflow: hidden;
+}
+@media screen and (min-width: 70em) {
+  html body main #sketch {
+    width: 50%;
+    height: 100%;
+  }
+}
+html body main #information {
+  float: left;
+  position: absolute;
+  width: 100%;
+  top: 70%;
+  background-color: white;
+  z-index: 99;
+}
+@media screen and (min-width: 70em) {
+  html body main #information {
+    width: 50%;
+    top: 0px;
+    min-height: 100%;
+  }
+}
+@media (prefers-color-scheme: light) {
+  html body main #information {
+    background-color: black;
+  }
+}
+html body main #information #wrapper {
+  color: black;
+  padding: 2rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+@media screen and (min-width: 30em) and (max-width: 70em) {
+  html body main #information #wrapper {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+@media screen and (min-width: 70em) {
+  html body main #information #wrapper {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    padding: 5rem;
+  }
+}
+@media (prefers-color-scheme: light) {
+  html body main #information #wrapper {
+    color: white;
+  }
+}
+html body main #information #wrapper h1, html body main #information #wrapper h2 {
+  font-weight: 600;
+}
+html body main #information #wrapper h1 span, html body main #information #wrapper h2 span {
+  display: block;
+  font-weight: 400;
+}
+@media screen and (min-width: 70em) {
+  html body main #information #wrapper h1 span, html body main #information #wrapper h2 span {
+    display: inline;
+  }
+}
+html body main #information #wrapper a {
+  color: black;
+}
+@media (prefers-color-scheme: light) {
+  html body main #information #wrapper a {
+    color: white;
+  }
+}
+html body main #information #wrapper #about, html body main #information #wrapper #work, html body main #information #wrapper #projects {
+  padding-bottom: 2.25rem;
+}
+@media screen and (min-width: 30em) and (max-width: 70em) {
+  html body main #information #wrapper #about, html body main #information #wrapper #work, html body main #information #wrapper #projects {
+    padding-bottom: 3rem;
+  }
+}
+@media screen and (min-width: 70em) {
+  html body main #information #wrapper #about, html body main #information #wrapper #work, html body main #information #wrapper #projects {
+    padding-bottom: 5rem;
+  }
+}
+html body main #information #wrapper #about, html body main #information #wrapper #work, html body main #information #wrapper #projects {
+  margin-bottom: 2.25rem;
+}
+html body main #information #wrapper #about h2, html body main #information #wrapper #work h2, html body main #information #wrapper #projects h2 {
+  font-weight: 600;
+}
+
+/*# sourceMappingURL=index.css.map */

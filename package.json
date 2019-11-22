@@ -18,21 +18,12 @@
 		"last 2 Safari version",
 		"last 2 Edge version"
 	],
-	"dependencies": {
-		"lit-html": "^1.1.2",
-		"p5": "^0.10.2",
-		"planck-js": "^0.3.10"
-	},
 	"devDependencies": {
-		"light-server": "^2.6.4",
-		"parcel-bundler": "^1.12.4",
 		"sass": "^1.23.6"
 	},
 	"scripts": {
-		"dev": "parcel index.html -p 3000 --no-cache",
-		"prebuild": "rm -rf dist",
-		"build": "parcel build index.html --no-cache --no-source-maps",
-		"predeploy": "yarn build",
+		"sass": "sass index.scss index.css",
+		"predeploy": "yarn sass",
 		"deploy": "git add . && git commit -a -m 'latest build' && git push -f origin master"
 	}
 }
