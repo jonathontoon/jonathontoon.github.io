@@ -67,6 +67,10 @@ html {
 				height: 70%;
 				overflow: hidden;
 
+				@media (orientation: landscape) {
+					height: 100%;
+				}
+
 				@include responsive(large) {
 					width: 50%;
 					height: 100%;
@@ -80,6 +84,10 @@ html {
 				top: 70%;
 				background-color: white;
 				z-index: 99;
+
+				@media (orientation: landscape) {
+					top: 100%;
+				}
 
 				@include responsive(large) {
 					width: 50%;
@@ -158,6 +166,10 @@ html {
 					#about, #work, #projects {
 						margin-bottom: 2.25rem;
 						border-bottom: 2px solid black;
+
+						@media (prefers-color-scheme: light) { 
+							border-bottom: 2px solid white;
+						}
 						
 						@include responsive(medium) {
 							margin-bottom: 3rem;
