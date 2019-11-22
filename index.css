@@ -114,6 +114,10 @@ html body main #information #wrapper h1 span, html body main #information #wrapp
     display: inline;
   }
 }
+html body main #information #wrapper h2 {
+  font-weight: 600;
+  padding-bottom: 2rem;
+}
 html body main #information #wrapper a {
   color: black;
 }
@@ -137,9 +141,6 @@ html body main #information #wrapper #about, html body main #information #wrappe
 }
 html body main #information #wrapper #about, html body main #information #wrapper #work, html body main #information #wrapper #projects {
   margin-bottom: 2.25rem;
-}
-html body main #information #wrapper #about h2, html body main #information #wrapper #work h2, html body main #information #wrapper #projects h2 {
-  font-weight: 600;
 }
 
 /*# sourceMappingURL=index.css.map */

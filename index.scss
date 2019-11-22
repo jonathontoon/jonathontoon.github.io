@@ -125,6 +125,11 @@ html {
 						}
 					}
 
+					h2 {
+						font-weight: 600;
+						padding-bottom: 2rem;
+					}
+
 					a {
 						color: black;
 
@@ -147,10 +152,6 @@ html {
 
 					#about, #work, #projects {
 						margin-bottom: 2.25rem;
-
-						h2 {
-							font-weight: 600;
-						}
 					}
 				}
 			}
