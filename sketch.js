@@ -1,14 +1,6 @@
 const vertexDetail = 500;
 let canvas, noiseZ = 0, radius, elementWidth, elementHeight;
 
-let darkModeEnabled = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-
-if (window.matchMedia) {
-	window.matchMedia('(prefers-color-scheme: dark)').addListener(function(e) {
-		darkModeEnabled = e.matches;
-	});
-}
-
 function updateElementDimensions() {
 	const element = document.getElementById("sketch");
 	elementWidth = element.clientWidth;
@@ -77,13 +69,8 @@ function setup() {
 
 function draw() {
 	blendMode(BLEND);
-	if (darkModeEnabled) {
-		background(color(0, 0, 0));
-		blendMode(ADD);	
-	} else {
-		background(color(255, 255, 255));
-		blendMode(MULTIPLY);	
-	}
+	background(color(0, 0, 0));
+	blendMode(ADD);	
 	
 	strokeWeight(calculateStrokeWeight());
 
