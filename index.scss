@@ -94,17 +94,18 @@ html {
 				#wrapper {
 					color: black;
 					padding: 2rem;
-					font-size: 1.5rem;
-					line-height: 2.0rem;
+					padding-top: 2.75rem;
+					font-size: 1.75rem;
+					line-height: 2.25rem;
 					
 					@include responsive(medium) {
-						font-size: 1.5rem;
-						line-height: 2rem;
+						font-size: 2rem;
+						line-height: 2.5rem;
 					}
 
 					@include responsive(large) {
-						font-size: 2rem;
-						line-height: 2.5rem;
+						font-size: 2.5rem;
+						line-height: 3rem;
 						padding: 5rem;
 					}
 
@@ -127,7 +128,11 @@ html {
 
 					h2 {
 						font-weight: 600;
-						padding-bottom: 2rem;
+						padding-bottom: 1rem;
+
+						@include responsive(large) {
+							padding-bottom: 2rem;
+						}		
 					}
 
 					a {
@@ -138,7 +143,7 @@ html {
 						}
 					}
 
-					#about, #work, #projects {
+					#about, #work, #projects, #contact {
 						padding-bottom: 2.25rem;
 
 						@include responsive(medium) {

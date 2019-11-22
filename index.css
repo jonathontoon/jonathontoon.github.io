@@ -81,19 +81,20 @@ html body main #information {
 html body main #information #wrapper {
   color: black;
   padding: 2rem;
-  font-size: 1.5rem;
-  line-height: 2rem;
+  padding-top: 2.75rem;
+  font-size: 1.75rem;
+  line-height: 2.25rem;
 }
 @media screen and (min-width: 30em) and (max-width: 70em) {
   html body main #information #wrapper {
-    font-size: 1.5rem;
-    line-height: 2rem;
+    font-size: 2rem;
+    line-height: 2.5rem;
   }
 }
 @media screen and (min-width: 70em) {
   html body main #information #wrapper {
-    font-size: 2rem;
-    line-height: 2.5rem;
+    font-size: 2.5rem;
+    line-height: 3rem;
     padding: 5rem;
   }
 }
@@ -116,7 +117,12 @@ html body main #information #wrapper h1 span, html body main #information #wrapp
 }
 html body main #information #wrapper h2 {
   font-weight: 600;
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
+}
+@media screen and (min-width: 70em) {
+  html body main #information #wrapper h2 {
+    padding-bottom: 2rem;
+  }
 }
 html body main #information #wrapper a {
   color: black;
@@ -126,16 +132,16 @@ html body main #information #wrapper a {
     color: white;
   }
 }
-html body main #information #wrapper #about, html body main #information #wrapper #work, html body main #information #wrapper #projects {
+html body main #information #wrapper #about, html body main #information #wrapper #work, html body main #information #wrapper #projects, html body main #information #wrapper #contact {
   padding-bottom: 2.25rem;
 }
 @media screen and (min-width: 30em) and (max-width: 70em) {
-  html body main #information #wrapper #about, html body main #information #wrapper #work, html body main #information #wrapper #projects {
+  html body main #information #wrapper #about, html body main #information #wrapper #work, html body main #information #wrapper #projects, html body main #information #wrapper #contact {
     padding-bottom: 3rem;
   }
 }
 @media screen and (min-width: 70em) {
-  html body main #information #wrapper #about, html body main #information #wrapper #work, html body main #information #wrapper #projects {
+  html body main #information #wrapper #about, html body main #information #wrapper #work, html body main #information #wrapper #projects, html body main #information #wrapper #contact {
     padding-bottom: 5rem;
   }
 }
