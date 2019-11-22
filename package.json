@@ -1,0 +1,36 @@
+{
+	"name": "jonathontoon.github.io",
+	"version": "1.0.0",
+	"description": "A simple static contact page",
+	"main": "index.js",
+	"repository": "https://github.com/jonathontoon/jonathontoon.github.io.git",
+	"author": "Jonathon Toon <jonathontoon@gmail.com>",
+	"license": "MIT",
+	"private": true,
+	"browserslist": [
+		"last 2 Baidu version",
+		"last 2 ChromeAndroid version",
+		"last 2 iOS version",
+		"last 2 Chrome version",
+		"last 2 Firefox version",
+		"last 2 FirefoxAndroid version",
+		"last 2 Opera version",
+		"last 2 Safari version",
+		"last 2 Edge version"
+	],
+	"dependencies": {
+		"lit-html": "^1.1.2",
+		"p5": "^0.10.2",
+		"planck-js": "^0.3.10"
+	},
+	"devDependencies": {
+		"light-server": "^2.6.4",
+		"parcel-bundler": "^1.12.4",
+		"sass": "^1.23.6"
+	},
+	"scripts": {
+		"dev": "parcel index.html -p 3000 --no-cache",
+		"prebuild": "rm -rf dist",
+		"build": "parcel build index.html --no-cache --no-source-maps",
+	}
+}
