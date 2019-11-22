@@ -50,10 +50,6 @@ html {
 		margin: 0;
 		padding: 0;
 
-		@media (prefers-color-scheme: light) { 
-			background-color: white;
-		}
-
 		main {
 			position: absolute;
 			width: 100%;
@@ -95,10 +91,6 @@ html {
 					min-height: 100%;
 				}
 
-				@media (prefers-color-scheme: light) { 
-					background-color: black;
-				}
-
 				#wrapper {
 					color: black;
 					padding: 2rem;
@@ -115,10 +107,6 @@ html {
 						font-size: 2.5rem;
 						line-height: 3rem;
 						padding: 5rem;
-					}
-
-					@media (prefers-color-scheme: light) { 
-						color: white;
 					}
 
 					h1, h2 {
@@ -145,10 +133,6 @@ html {
 
 					a {
 						color: black;
-
-						@media (prefers-color-scheme: light) { 
-							color: white;
-						}
 					}
 
 					#about, #work, #projects {
@@ -166,10 +150,6 @@ html {
 					#about, #work, #projects {
 						margin-bottom: 2.25rem;
 						border-bottom: 2px solid black;
-
-						@media (prefers-color-scheme: light) { 
-							border-bottom: 2px solid white;
-						}
 						
 						@include responsive(medium) {
 							margin-bottom: 3rem;
