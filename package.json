@@ -1,9 +1,9 @@
 {
-	"name": "jonathontoon.github.io",
+	"name": "jonathontoon.com",
 	"version": "1.0.0",
 	"description": "A simple static contact page",
 	"main": "index.js",
-	"repository": "https://github.com/jonathontoon/jonathontoon.github.io.git",
+	"repository": "https://github.com/jonathontoon/jonathontoon.com",
 	"author": "Jonathon Toon <jonathontoon@gmail.com>",
 	"license": "MIT",
 	"private": true,
@@ -31,6 +31,6 @@
 	"scripts": {
 		"dev": "parcel index.html -p 3000 --no-cache",
 		"prebuild": "rm -rf dist",
-		"build": "parcel build index.html --no-cache --no-source-maps",
+		"build": "parcel build index.html --no-cache --no-source-maps"
 	}
 }
