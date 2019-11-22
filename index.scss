@@ -67,6 +67,10 @@ html {
 				height: 70%;
 				overflow: hidden;
 
+				@media (orientation: landscape) {
+					height: 100%;
+				}
+
 				@include responsive(large) {
 					width: 50%;
 					height: 100%;
@@ -81,6 +85,10 @@ html {
 				background-color: white;
 				z-index: 99;
 
+				@media (orientation: landscape) {
+					top: 100%;
+				}
+
 				@include responsive(large) {
 					width: 50%;
 					top: 0px;
@@ -94,17 +102,18 @@ html {
 				#wrapper {
 					color: black;
 					padding: 2rem;
-					font-size: 1.5rem;
-					line-height: 2.0rem;
+					padding-top: 2.75rem;
+					font-size: 1.75rem;
+					line-height: 2.25rem;
 					
 					@include responsive(medium) {
-						font-size: 1.5rem;
-						line-height: 2rem;
+						font-size: 2rem;
+						line-height: 2.5rem;
 					}
 
 					@include responsive(large) {
-						font-size: 2rem;
-						line-height: 2.5rem;
+						font-size: 2.5rem;
+						line-height: 3rem;
 						padding: 5rem;
 					}
 
@@ -127,7 +136,11 @@ html {
 
 					h2 {
 						font-weight: 600;
-						padding-bottom: 2rem;
+						padding-bottom: 1rem;
+
+						@include responsive(large) {
+							padding-bottom: 2rem;
+						}		
 					}
 
 					a {
@@ -152,6 +165,19 @@ html {
 
 					#about, #work, #projects {
 						margin-bottom: 2.25rem;
+						border-bottom: 2px solid black;
+
+						@media (prefers-color-scheme: light) { 
+							border-bottom: 2px solid white;
+						}
+						
+						@include responsive(medium) {
+							margin-bottom: 3rem;
+						}
+
+						@include responsive(large) {
+							margin-bottom: 5rem;
+						}
 					}
 				}
 			}

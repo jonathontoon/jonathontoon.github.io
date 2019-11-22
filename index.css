@@ -52,6 +52,11 @@ html body main #sketch {
   height: 70%;
   overflow: hidden;
 }
+@media (orientation: landscape) {
+  html body main #sketch {
+    height: 100%;
+  }
+}
 @media screen and (min-width: 70em) {
   html body main #sketch {
     width: 50%;
@@ -65,6 +70,11 @@ html body main #information {
   top: 70%;
   background-color: white;
   z-index: 99;
+}
+@media (orientation: landscape) {
+  html body main #information {
+    top: 100%;
+  }
 }
 @media screen and (min-width: 70em) {
   html body main #information {
@@ -81,19 +91,20 @@ html body main #information {
 html body main #information #wrapper {
   color: black;
   padding: 2rem;
-  font-size: 1.5rem;
-  line-height: 2rem;
+  padding-top: 2.75rem;
+  font-size: 1.75rem;
+  line-height: 2.25rem;
 }
 @media screen and (min-width: 30em) and (max-width: 70em) {
   html body main #information #wrapper {
-    font-size: 1.5rem;
-    line-height: 2rem;
+    font-size: 2rem;
+    line-height: 2.5rem;
   }
 }
 @media screen and (min-width: 70em) {
   html body main #information #wrapper {
-    font-size: 2rem;
-    line-height: 2.5rem;
+    font-size: 2.5rem;
+    line-height: 3rem;
     padding: 5rem;
   }
 }
@@ -116,7 +127,12 @@ html body main #information #wrapper h1 span, html body main #information #wrapp
 }
 html body main #information #wrapper h2 {
   font-weight: 600;
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
+}
+@media screen and (min-width: 70em) {
+  html body main #information #wrapper h2 {
+    padding-bottom: 2rem;
+  }
 }
 html body main #information #wrapper a {
   color: black;
@@ -141,6 +157,22 @@ html body main #information #wrapper #about, html body main #information #wrappe
 }
 html body main #information #wrapper #about, html body main #information #wrapper #work, html body main #information #wrapper #projects {
   margin-bottom: 2.25rem;
+  border-bottom: 2px solid black;
+}
+@media (prefers-color-scheme: light) {
+  html body main #information #wrapper #about, html body main #information #wrapper #work, html body main #information #wrapper #projects {
+    border-bottom: 2px solid white;
+  }
+}
+@media screen and (min-width: 30em) and (max-width: 70em) {
+  html body main #information #wrapper #about, html body main #information #wrapper #work, html body main #information #wrapper #projects {
+    margin-bottom: 3rem;
+  }
+}
+@media screen and (min-width: 70em) {
+  html body main #information #wrapper #about, html body main #information #wrapper #work, html body main #information #wrapper #projects {
+    margin-bottom: 5rem;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
