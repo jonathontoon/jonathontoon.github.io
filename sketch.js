@@ -1,3 +1,6 @@
+const vertexDetail = 500;
+let canvas, noiseZ = 0, radius, elementWidth, elementHeight;
+
 let darkModeEnabled = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
 
 if (window.matchMedia) {
@@ -5,9 +8,6 @@ if (window.matchMedia) {
 		darkModeEnabled = e.matches;
 	});
 }
-
-const vertexDetail = 500;
-let canvas, noiseZ = 0, radius, elementWidth, elementHeight;
 
 function updateElementDimensions() {
 	const element = document.getElementById("sketch");
@@ -69,14 +69,6 @@ function setup() {
 	canvas = createCanvas(elementWidth, elementHeight);
 	canvas.parent("sketch");
 	radius = calculateRadius();
-
-	// if (darkModeEnabled) {
-	// 	background(color(0, 0, 0));
-	// 	blendMode(ADD);
-	// } else {
-	// 	background(color(255, 255, 255));
-	// 	blendMode(MULTIPLY);
-	// }
 
 	noFill();
 	noiseDetail(2);
