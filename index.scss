@@ -143,7 +143,7 @@ html {
 						}
 					}
 
-					#about, #work, #projects, #contact {
+					#about, #work, #projects {
 						padding-bottom: 2.25rem;
 
 						@include responsive(medium) {
@@ -157,6 +157,15 @@ html {
 
 					#about, #work, #projects {
 						margin-bottom: 2.25rem;
+						border-bottom: 2px solid black;
+						
+						@include responsive(medium) {
+							margin-bottom: 3rem;
+						}
+
+						@include responsive(large) {
+							margin-bottom: 5rem;
+						}
 					}
 				}
 			}

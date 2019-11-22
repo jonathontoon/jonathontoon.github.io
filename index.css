@@ -132,21 +132,32 @@ html body main #information #wrapper a {
     color: white;
   }
 }
-html body main #information #wrapper #about, html body main #information #wrapper #work, html body main #information #wrapper #projects, html body main #information #wrapper #contact {
+html body main #information #wrapper #about, html body main #information #wrapper #work, html body main #information #wrapper #projects {
   padding-bottom: 2.25rem;
 }
 @media screen and (min-width: 30em) and (max-width: 70em) {
-  html body main #information #wrapper #about, html body main #information #wrapper #work, html body main #information #wrapper #projects, html body main #information #wrapper #contact {
+  html body main #information #wrapper #about, html body main #information #wrapper #work, html body main #information #wrapper #projects {
     padding-bottom: 3rem;
   }
 }
 @media screen and (min-width: 70em) {
-  html body main #information #wrapper #about, html body main #information #wrapper #work, html body main #information #wrapper #projects, html body main #information #wrapper #contact {
+  html body main #information #wrapper #about, html body main #information #wrapper #work, html body main #information #wrapper #projects {
     padding-bottom: 5rem;
   }
 }
 html body main #information #wrapper #about, html body main #information #wrapper #work, html body main #information #wrapper #projects {
   margin-bottom: 2.25rem;
+  border-bottom: 2px solid black;
+}
+@media screen and (min-width: 30em) and (max-width: 70em) {
+  html body main #information #wrapper #about, html body main #information #wrapper #work, html body main #information #wrapper #projects {
+    margin-bottom: 3rem;
+  }
+}
+@media screen and (min-width: 70em) {
+  html body main #information #wrapper #about, html body main #information #wrapper #work, html body main #information #wrapper #projects {
+    margin-bottom: 5rem;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
