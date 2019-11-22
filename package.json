@@ -3,7 +3,7 @@
 	"version": "1.0.0",
 	"description": "A simple static contact page",
 	"main": "index.js",
-	"repository": "https://github.com/jonathontoon/jonathontoon.com",
+	"repository": "https://github.com/jonathontoon/jonathontoon.github.io",
 	"author": "Jonathon Toon <jonathontoon@gmail.com>",
 	"license": "MIT",
 	"private": true,
