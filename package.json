@@ -33,6 +33,6 @@
 		"prebuild": "rm -rf dist",
 		"build": "parcel build index.html --no-cache --no-source-maps",
 		"predeploy": "yarn build",
-		"deploy": "git add . && git commit -a -m 'latest build' && git push origin master"
+		"deploy": "git add . && git commit -a -m 'latest build' && git push -f origin master"
 	}
 }
