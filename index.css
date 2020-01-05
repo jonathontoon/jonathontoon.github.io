@@ -34,11 +34,6 @@ html body {
   margin: 0;
   padding: 0;
 }
-@media (prefers-color-scheme: light) {
-  html body {
-    background-color: white;
-  }
-}
 html body main {
   position: absolute;
   width: 100%;
@@ -83,11 +78,6 @@ html body main #information {
     min-height: 100%;
   }
 }
-@media (prefers-color-scheme: light) {
-  html body main #information {
-    background-color: black;
-  }
-}
 html body main #information #wrapper {
   color: black;
   padding: 2rem;
@@ -106,11 +96,6 @@ html body main #information #wrapper {
     font-size: 2.5rem;
     line-height: 3rem;
     padding: 5rem;
-  }
-}
-@media (prefers-color-scheme: light) {
-  html body main #information #wrapper {
-    color: white;
   }
 }
 html body main #information #wrapper h1, html body main #information #wrapper h2 {
@@ -137,11 +122,6 @@ html body main #information #wrapper h2 {
 html body main #information #wrapper a {
   color: black;
 }
-@media (prefers-color-scheme: light) {
-  html body main #information #wrapper a {
-    color: white;
-  }
-}
 html body main #information #wrapper #about, html body main #information #wrapper #work, html body main #information #wrapper #projects {
   padding-bottom: 2.25rem;
 }
@@ -158,11 +138,6 @@ html body main #information #wrapper #about, html body main #information #wrappe
 html body main #information #wrapper #about, html body main #information #wrapper #work, html body main #information #wrapper #projects {
   margin-bottom: 2.25rem;
   border-bottom: 2px solid black;
-}
-@media (prefers-color-scheme: light) {
-  html body main #information #wrapper #about, html body main #information #wrapper #work, html body main #information #wrapper #projects {
-    border-bottom: 2px solid white;
-  }
 }
 @media screen and (min-width: 30em) and (max-width: 70em) {
   html body main #information #wrapper #about, html body main #information #wrapper #work, html body main #information #wrapper #projects {
