@@ -22,8 +22,6 @@
 		"sass": "^1.23.6"
 	},
 	"scripts": {
-		"sass": "sass index.scss index.css",
-		"predeploy": "yarn sass",
-		"deploy": "git add . && git commit -a -m 'latest build' && git push -f origin master"
+		"sass": "sass index.scss index.css"
 	}
 }
