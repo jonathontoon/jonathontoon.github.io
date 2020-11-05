@@ -1,8 +1,4 @@
-logs
-*.log
-.node_repl_history
 .DS_Store
 node_modules
-dist
-.cache
-yarn-error
+public/*
+debug.log

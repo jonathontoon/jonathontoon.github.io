@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>{{ title }}</title>
+		<meta name="author" content="{{ author }}">
+		<meta name="description" content="{{ description }}">
+        <meta name="keywords" content="{{ keywords }}">
+
+        <!-- Android Config  -->
+		<meta name="theme-color" content="#000000">
+		<meta name="mobile-web-app-capable" content="yes">
+
+		<!-- Mobile Safari Config -->
+		<meta name="apple-mobile-web-app-title" content="{{ title }}">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<!-- Windows Config  -->
+		<meta name="application-name" content="{{ title }}">
+		<meta name="msapplication-tooltip" content="{{ description }}">
+		<meta name="msapplication-starturl" content="/">
+		<meta name="msapplication-navbutton-color" content="#000000">
+		<meta name="msapplication-TileColor" content="#000000">
+		<meta name="msapplication-config" content="browserconfig.xml">
+		<meta name="msapplication-TileImage" content="images/favicon-144.png">
+		<meta name="msapplication-tap-highlight" content="no">
+
+		<!-- UC Mobile Browser -->
+		<meta name="full-screen" content="yes">
+		<meta name="browsermode" content="application">
+
+		<!-- Facebook Open Graph -->
+		<meta property="og:title" content="{{ og_title }}">
+		<meta property="og:description" content="{{ og_description }}">
+		<meta property="og:image" content="{{ og_image }}">
+
+		<!-- Twitter Cards -->
+		<meta name="twitter:card" content="{{ twitter_card_summary }}">
+		<meta name="twitter:site" content="{{ twitter_site }}">
+		<meta name="twitter:creator" content="{{ twitter_individual_account }}">
+		<meta name="twitter:url" content="{{ twitter_website_url }}">
+		<meta name="twitter:title" content="{{ twitter_title }}">
+		<meta name="twitter:description" content="{{ twitter_description }}">
+		<meta name="twitter:image" content="{{ twitter_image }}">
+
+		<!-- Icon Images -->
+		<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+		<link rel="mask-icon" size="any" color="#000000" href="images/favicon.svg">
+		<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+		<link rel="icon" type="image/png" sizes="48x48" href="images/favicon-48.png">
+		<link rel="icon" type="image/png" sizes="57x57" href="images/favicon-57.png">
+		<link rel="icon" type="image/png" sizes="76x76" href="images/favicon-76.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96.png">
+		<link rel="icon" type="image/png" sizes="128x128" href="images/favicon-128.png">
+		<link rel="icon" type="image/png" sizes="192x192" href="images/favicon-192.png">
+		<link rel="icon" type="image/png" sizes="228x228" href="images/favicon-228.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="images/favicon-120.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="images/favicon-152.png">
+		<link rel="apple-touch-icon" sizes="167x167" href="images/favicon-167.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="images/favicon-180.png">
+
+		<!-- Web Manifest  -->
+		<link rel="manifest" href="jonathontoon.webmanifest">
+
+		<!-- Misc -->	
+	    <link rel="sitemap" type="application/xml" title="sitemap" href="sitemap.xml">
+
+		<!-- CSS -->
+		<link type="text/css" rel="stylesheet" media="all" href="bundle.min.css">
+
+		<!-- Preload Config -->
+		<link rel="dns-prefetch" href="{{ prefetch_url }}">
+		<link rel="preconnect" href="{{ website_url }}">
+		<link rel="prefetch" href="{{ website_url }}">
+		<link rel="prerender" href="{{ website_url }}">
+		<link rel="canonical" href="{{ website_url }}">
+		<link rel="shortlink" href="{{ website_url }}">
+
+		<!-- Preload Images -->
+		<link rel="preload" as="image" href="images/favicon.ico">
+		<link rel="preload" as="image" href="images/favicon.svg">
+		<link rel="preload" as="image" href="images/favicon-16.png">
+		<link rel="preload" as="image" href="images/favicon-32.png">
+		<link rel="preload" as="image" href="images/favicon-48.png">
+		<link rel="preload" as="image" href="images/favicon-57.png">
+		<link rel="preload" as="image" href="images/favicon-76.png">
+		<link rel="preload" as="image" href="images/favicon-96.png">
+		<link rel="preload" as="image" href="images/favicon-128.png">
+		<link rel="preload" as="image" href="images/favicon-192.png">
+		<link rel="preload" as="image" href="images/favicon-228.png">
+		<link rel="preload" as="image" href="images/favicon-120.png">
+		<link rel="preload" as="image" href="images/favicon-152.png">
+		<link rel="preload" as="image" href="images/favicon-167.png">
+		<link rel="preload" as="image" href="images/favicon-180.png">
+
+		<!-- Preload Web Fonts -->
+		<link rel="preload" as="font" href="fonts/Inter-Bold.woff2?v=3.15">
+		<link rel="preload" as="font" href="fonts/Inter-Medium.woff2?v=3.15">
+		<link rel="preload" as="font" href="fonts/Inter-SemiBold.woff2?v=3.15">
+		<link rel="preload" as="font" href="fonts/Inter-Regular.woff2?v=3.15">
+
+		<!-- Preload CSS -->
+		<link rel="preload" as="style" href="bundle.min.css">
+		
+		<!-- Preload Javascript -->
+		<link rel="preload" as="script" href="bundle.min.js">
+	</head>
+	<body>
+        {% include "noscript.html" %}
+		{% block content %}{% endblock %}
+
+        <!-- Javascript -->
+		<script type="text/javascript" src="bundle.min.js"></script>
+        <script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+			ga('create', 'UA-33427763-1', 'auto');
+			ga('send', 'pageview');
+		</script>
+        {% if isDevelopment %}
+			<script type="text/javascript">
+				if ("serviceWorker" in navigator) {
+					navigator.serviceWorker.register("service-worker.js", { scope: "/" }).then(function (serviceWorker) {
+						console.log("Service Worker registered.");
+						console.log(serviceWorker);
+					}).catch(function (error) {
+						console.log("Error registering the Service Worker.");
+						console.log(error);
+					});
+				}
+			</script>
+		{% else %}
+			<script type="text/javascript">
+				if ("serviceWorker" in navigator) {
+					navigator.serviceWorker.register("service-worker.js", { scope: "/" });
+				}
+			</script>
+		{% endif %}
+  	</body>
+</html>

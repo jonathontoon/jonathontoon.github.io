@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% set title = "Jonathon Toon" %}
+{% set author = "Jonathon Toon" %}
+{% set description = "Jonathon Toon is a multidisciplinary software designer based in Sydney, Australia." %}
+{% set keywords = "design, software, product, new zealand, sydney, technology, javascript" %}
+
+{% set prefetch_url = "://jonathontoon.com" %}
+{% set website_url = "https://www.jonathontoon.com" %}
+
+{% set og_title = "Jonathon Toon — multidisciplinary software designer." %}
+{% set og_description = "Jonathon Toon is a multidisciplinary software designer based in Sydney, Australia." %}
+{% set og_image = "/images/og-image.png" %}
+
+{% set twitter_card_summary = "Jonathon Toon is a multidisciplinary software designer based in Sydney, Australia." %}
+{% set twitter_site = "@jonathontoon" %}
+{% set twitter_individual_account = "@jonathontoon" %}
+{% set twitter_website_url = "https://www.jonathontoon.com" %}
+{% set twitter_title = "Jonathon Toon — multidisciplinary software designer." %}
+{% set twitter_description = "Jonathon Toon is a multidisciplinary software designer based in Sydney, Australia." %}
+{% set twitter_image = "/images/twitter-image.png" %}
+
+{% block content %}
+	<main>
+		{% include "canvas.html" %}
+		{% include "information.html" %}
+	</main>
+{% endblock %} 
