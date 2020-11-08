@@ -91,12 +91,15 @@ const settings = {
   // Process nunjunk templates to output folder
   function buildHTML(done) {
     // Make sure this feature is activated before running
-      if (!settings.html) done();
+    if (!settings.html) done();
   
+    const buildDate = new Date().toLocaleDateString("en-US", { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
+
     return gulp.src(paths.html.input)
       .pipe(nunjucksRender({
           data: {
-            isDevelopment
+            isDevelopment,
+            buildDate 
           },
           path: paths.html.nunjunks,
           watch: false,
