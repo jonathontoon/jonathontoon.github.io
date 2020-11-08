@@ -40,7 +40,7 @@
 			imageSrc[r] = ruleMap[ruleR];
 			imageSrc[g] = ruleMap[ruleG];
 			imageSrc[b] = ruleMap[ruleB];
-			imageSrc[a] = 255;
+			imageSrc[a] = 130;
 		}
 
 		const imageData = new ImageData(imageSrc, _faceSize, _faceSize);
