@@ -150,7 +150,6 @@ const settings = {
     return gulp.src(paths.styles.input)
       .pipe(postcss([
           cssimport(),
-          cssvariables(),
           autoprefixer(),
           cssnano({
             preset: ["default", {
@@ -158,12 +157,6 @@ const settings = {
                 removeAll: true,
               }
             }]
-        }),
-        purgecss({
-          content: [paths.html.purge],
-          fontFace: true,
-          keyframes: true,
-          variables: true
         })
       ]))
       .pipe(concat("bundle.css"))

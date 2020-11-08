@@ -8,6 +8,7 @@
 		<meta name="author" content="{{ author }}">
 		<meta name="description" content="{{ description }}">
         <meta name="keywords" content="{{ keywords }}">
+		<meta name="color-scheme" content="dark light">
 
         <!-- Android Config  -->
 		<meta name="theme-color" content="#000000">
@@ -110,9 +111,7 @@
 		<link rel="preload" as="script" href="bundle.min.js">
 	</head>
 	<body>
-        {% include "noscript.html" %}
 		{% block content %}{% endblock %}
-
         <!-- Javascript -->
 		<script type="text/javascript" src="bundle.min.js"></script>
         <script>
